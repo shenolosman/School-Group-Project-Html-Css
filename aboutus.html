@@ -12,6 +12,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/dog-face.ico">
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
   <meta name="author" content="Simon Björnfors">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -36,7 +37,7 @@
         <div class="collapse navbar-collapse" id="SmallScreenNavigationBar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="/"><img src="img/dog-face.ico" style="width: 20px;">
+              <a class="nav-link" href="/"><img src="img/dog-face.ico" style="width: 20px;" alt="dog-face">
                 Home</a>
             </li>
             <li class="nav-item">
@@ -56,38 +57,54 @@
   <main>
     <section class="container">
       <div class="col-md-12">
-        <h2>Kontakt</h2>
+        <h2 class="text-center">Kontaktsida</h2>
+        <h3 class="text-center text-md-start">Karta <i class="bi bi-geo-alt"></i></h3>
         <div id="map"></div>
-    </div>
-      <form action="" class="row g-3">
-        <div class="col-md-6">
-          <label for="firstName" class="form-label">Förnamn</label>
-          <input type="text" class="form-control" id="firstName" required>
-        </div>
-        <div class="col-md-6">
-          <label for="lastName" class="form-label">Efternamn</label>
-          <input type="text" class="form-control" id="lastName" required>
-        </div>
-        <div class="col-md-8">
-          <label for="emailAddress" class="form-label">Email</label>
-          <input type="text" class="form-control" id="emailAddress" required>
-        </div>
-        <div class="col-md-4">
-          <label for="phone" class="form-label">Telefonnummer</label>
-          <input type="tel" class="form-control" id="phone">
-        </div>
-        <div class="col-md-12">
-          <label for="message" class="form-label">Meddelande</label>
-          <textarea name="" id="message" rows="3" class="form-control" required></textarea>
-        </div>
-        <div class="col-md-12">
-          <button class="btn btn-primary">Skicka</button>
-        </div>
-    </form>
+      </div>
+        <form class="row g-3">
+          <div class="col-md-12">
+            <h3 class="text-center text-md-start">Kontaktformulär <i class="bi bi-envelope"></i></h3>
+          </div>
+          <div class="col-md-6">
+            <label for="firstName" class="form-label">Förnamn</label>
+            <input type="text" class="form-control" id="firstName" required>
+          </div>
+          <div class="col-md-6">
+            <label for="lastName" class="form-label">Efternamn</label>
+            <input type="text" class="form-control" id="lastName" required>
+          </div>
+          <div class="col-md-8">
+            <label for="emailAddress" class="form-label">Email</label>
+            <input type="text" class="form-control" id="emailAddress" required>
+          </div>
+          <div class="col-md-4">
+            <label for="phone" class="form-label">Telefonnummer</label>
+            <input type="tel" class="form-control" id="phone">
+          </div>
+          <div class="col-md-12">
+            <label for="message" class="form-label">Meddelande</label>
+            <textarea id="message" rows="3" class="form-control" required></textarea>
+          </div>
+          <div class="col-md-12 text-center text-md-start">
+            <button class="btn btn-primary">Skicka</button>
+          </div>
+        </form>
+    </section>
   </main>
-  <footer>
-
-  </footer>
+<footer class="p-5">
+  <div class="container">
+    <div class="row g-3">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="lead">Copyright &copy; 2021 Projektarbete HTML CSS</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end h4">
+          <a href="https://www.twitter.com"><i class="bi bi-twitter text-dark mx-1"></i></a>
+          <a href="https://www.facebook.com"><i class="bi bi-facebook text-dark mx-1"></i></a>
+          <a href="https://www.instagram.com"><i class="bi bi-instagram text-dark mx-1"></i></a>
+        </div>
+    </div>
+  </div>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
@@ -98,9 +115,9 @@
       var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
-      center: [-71.060982, 42.35725],
-      zoom: 18,
+      center: [12.881578056122168, 56.66284869224564],
+      zoom: 14,
       });
   </script>
-</body>¨
+</body>
 </html>
