@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		readMoreButton.addEventListener('click', function() {
 			isOpen = !isOpen;
 			collapsedDiv.classList.toggle('open', isOpen)
-			readMoreText.innerText = isOpen ? 'Read less...' : 'Read more...'
+			readMoreText.innerText = isOpen ? 'Läs mindre...' : 'Läs mer...'
 		})
 	}
 })
