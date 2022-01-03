@@ -1,7 +1,19 @@
-html{
-    scroll-behavior: smooth;
-  }
+html {
+  scroll-behavior: smooth;
+}
 
 .sidebar .sticky-top {
-    top: 3rem;
-  }
+  top: 3rem;
+}
+
+section .collapsed {
+  display: none;
+}
+
+section .collapsed.open {
+  display: block;
+}
+
+section .read-more {
+  cursor: pointer;
+}
