@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/css/bootstrap-grid.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/contact.css">
   <link rel="shortcut icon" type="image/x-icon" href="img/dog-face.ico">
   <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
   <meta name="author" content="Simon Björnfors">
@@ -56,44 +57,43 @@
     </nav>
   </header>
   <main>
-    <section class="container">
-
-      <div class="col-md-12 mt-5">
-        <h3 class="text-center text-md-start">Hitta till oss <i class="bi bi-geo-alt"></i></h3>
-        <div id="map"></div>
-      </div>
-        <form class="row g-3">
-          <div class="col-md-12">
-            <h3 class="text-center text-md-start">Kontaktformulär <i class="bi bi-envelope"></i></h3>
+    <section class="content">
+      <div class="content-grid">
+        <div>
+          <h3>Hitta till oss <i class="bi bi-geo-alt"></i></h3>
+          <div id="map"></div>
+        </div>
+        <form class="form-grid">
+            <h3>Kontaktformulär <i class="bi bi-envelope"></i></h3>
+          <div>
+            <label for="firstName">Förnamn</label>
+            <input type="text" id="firstName" required>
           </div>
-          <div class="col-md-6">
-            <label for="firstName" class="form-label">Förnamn</label>
-            <input type="text" class="form-control" id="firstName" required>
+          <div>
+            <label for="lastName">Efternamn</label>
+            <input type="text" id="lastName" required>
           </div>
-          <div class="col-md-6">
-            <label for="lastName" class="form-label">Efternamn</label>
-            <input type="text" class="form-control" id="lastName" required>
+          <div>
+            <label for="emailAddress">Email</label>
+            <input type="text" id="emailAddress" required>
           </div>
-          <div class="col-md-8">
-            <label for="emailAddress" class="form-label">Email</label>
-            <input type="text" class="form-control" id="emailAddress" required>
+          <div>
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone">
           </div>
-          <div class="col-md-4">
-            <label for="phone" class="form-label">Telefonnummer</label>
-            <input type="tel" class="form-control" id="phone">
+          <div class="form-msg">
+            <label for="message" class="">Meddelande</label>
+            <textarea id="message" required></textarea>
           </div>
-          <div class="col-md-12">
-            <label for="message" class="form-label">Meddelande</label>
-            <textarea id="message" rows="6" class="form-control" required></textarea>
-          </div>
-          <div class="col-md-12 text-center text-md-start">
-            <button class="btn btn-primary">Skicka</button>
+          <div class="form-btn">
+            <button>Skicka</button>
           </div>
         </form>
+      </div>
     </section>
   </main>
 
-<footer class="p-5">
+<footer class="footer p-5 bg-light mt-3">
   <div class="container">
     <div class="row g-3">
         <div class="col-md-6 text-center text-md-start">
