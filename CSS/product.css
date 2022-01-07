@@ -1,0 +1,29 @@
+.container-slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 20%;
+    width: auto;
+    padding: 16px;
+}
+
+.next {
+    right: 25%
+}
+  
+.prev {
+    left: 25%;
+}
+
+.img-number{
+    text-align: center;
+    color: white;
+    position: absolute;
+    font-size: 10px;
+    top: 5%;
+    left: 27%;
+}
