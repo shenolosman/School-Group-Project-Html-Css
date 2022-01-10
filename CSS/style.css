@@ -1,18 +1,5 @@
 /*PROFILES*/
 
-:root{
-  --clr-primary-200: #c9be93;
-  --clr-primary-400: #824936;
-
-  --clr-neutral-100: #FFF;
-  --clr-neutral-900: #222C2A;
-}
-*,
-*::before,
-*::after{
-  box-sizing: border-box;
-}
-
 img{
   display: block;
   max-width: 100%;
