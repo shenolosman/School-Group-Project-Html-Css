@@ -1,5 +1,5 @@
-/*PROFILES*/
 
+/*PROFILES*/
 img{
   display: block;
   max-width: 100%;
@@ -40,15 +40,15 @@ section{
 }
 
 .background-light{
-  background-color: #a7995c
+  background-color: #fdf2be
 }
 .background-primary{
   color: #FFF;
-  background-color: #824936
+  background-color: #632614
 }
 .background-dark{
   color: #FFF;
-  background-color: #222C2A
+  background-color: #464d4b
 }
 .background-primary h2,
 .background-dark h2{
@@ -59,7 +59,6 @@ section{
 /*general*/
 
 header{
-    /*position: sticky;*/
     top: 0px;
     margin: 0px;
     overflow: hidden;
@@ -67,10 +66,6 @@ header{
 
 
 .tophead {
-    /*background-image: url(/HTML_CSS_projektarbete/img/hund.jpg);*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: 1200px 150px;*/
-    /*background-position: center;*/
     text-align: center;  
     padding: 10px;  
 
@@ -102,7 +97,11 @@ h3{
 
 .responsive{
   max-width: 90%;
-  max-height: auto;
+  max-height: auto;  
+}
+.banner{
+  display: flex;
+  justify-content: center;
 }
 
 /*@media only screen and(max-width:480px){
