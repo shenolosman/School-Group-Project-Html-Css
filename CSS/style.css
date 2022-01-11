@@ -8,17 +8,16 @@ article{
     width: auto;
     height: 700px;
 }
-@media screen {
-    
+@media only screen and (max-width: 600px) {
+    .carousel-item img{
+        width: auto;
+        height: auto;
+    } 
 }
-/* 
- justera om mobile och tablet
-@media screen {
-   .carousel-item img{
-    width: auto;
-    height: auto;
-} 
+@media only screen and (min-width: 601px) {
+    .carousel-item img{
+        width: auto;
+        height: auto;
+    } 
 }
 
-
-*/
