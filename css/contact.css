@@ -29,7 +29,7 @@
 }
 .form-grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: 1fr 1fr;
 }
 .form-grid > h3{
     justify-self: center;
@@ -67,7 +67,7 @@
 }
 @media (min-width: 1550px){
     .form-grid > h3{
-        grid-column: span 3;
+        grid-column: span 2;
     }
 
 }
