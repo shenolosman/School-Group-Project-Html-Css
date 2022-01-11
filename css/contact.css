@@ -76,3 +76,8 @@
     bottom: 0;
     width: 100%;
 }
+@media (max-width: 766px){
+    .footer{
+        position: relative;
+    }
+}
