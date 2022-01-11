@@ -44,7 +44,7 @@ section{
 }
 .background-primary{
   color: #FFF;
-  background-color: #632614
+  background-color: #49302a
 }
 .background-dark{
   color: #FFF;
@@ -89,6 +89,7 @@ header{
 
 body{
     background-color:rgb(255, 255, 255);
+    margin: 5px;
 }
 
 h3{
