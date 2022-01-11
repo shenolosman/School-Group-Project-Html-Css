@@ -1,1 +1,147 @@
-about us
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/dog-face.ico">
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <meta name="author" content="Simon Björnfors">
+  <!-- Ikoner till footer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <!-- Header innehåller semantik web och container används för att skriva in mitten och lämna glappar sidorna. Syns bättre.-->
+  <header>
+    <!--Nav för att skapa en menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- to make an company name to emphasise it
+                we can put a dog image or icon
+ <a class="navbar-brand" href="#">
+     <img src="/img/logo.svg" alt="Hunds logo" width="30" height="24" class="d-inline-block align-text-top">
+    Dogs
+</a>
+            -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#SmallScreenNavigationBar" aria-controls="SmallScreenNavigationBar" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <!-- Den här span användes för när skärmen är mindre visas menun i mindre form med en toggle knappt-->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="SmallScreenNavigationBar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/"><img src="img/dog-face.ico" style="width: 20px;" alt="dog-face">
+                Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/ourdogs.html">Our dogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Who we are</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="content">
+      <div class="content-grid">
+        <div>
+          <h3>Hitta till våra hundar i Halmstad <i class="bi bi-geo-alt"></i></h3>
+          <div class="contact-info">
+            <p>Linjegatan 7, 302 50 Halmstad, Sverige</p>
+          </div>
+          <div id="map"></div>
+        </div>
+        <form class="form-grid">
+            <h3>Kontaktformulär <i class="bi bi-envelope"></i></h3>
+          <div>
+            <label for="firstName">Förnamn</label>
+            <input type="text" id="firstName" required>
+          </div>
+          <div>
+            <label for="lastName">Efternamn</label>
+            <input type="text" id="lastName" required>
+          </div>
+          <div>
+            <label for="emailAddress">Email</label>
+            <input type="text" id="emailAddress" required>
+          </div>
+          <div>
+            <label for="phone">Telefonnummer</label>
+            <input type="tel" id="phone">
+          </div>
+          <div class="form-msg">
+            <label for="message" class="">Meddelande</label>
+            <textarea id="message" required></textarea>
+          </div>
+          <div class="form-btn">
+            <button>Skicka</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer p-5 bg-light mt-3">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-4 text-center">
+        <ul class="nav">
+          <li class="nav-item"> 
+          <a href="/Index.html" class="nav-link text-dark">Home</a>
+          </li>
+          <li class="nav-item">
+          <a href="/ourdogs.html" class="nav-link text-dark">Our dogs</a>
+          </li>
+          <li class="nav-item">
+          <a href="/aboutus.html" class="nav-link text-dark">About us</a>
+          </li>
+          <li class="nav-item">
+          <a href="/blog.html" class="nav-link text-dark">Blog</a>
+          </li>
+          <li class="nav-item">
+          <a href="/organisation.html" class="nav-link text-dark">Organisation</a>
+        </ul>
+      </div>
+        <div class="col-md-4 text-center text-md-start">
+          <p class="lead">Copyright &copy; 2021 Projektarbete HTML CSS</p>
+        </div>
+        <div class="col-md-4 text-center text-md-end h4">
+          <a href="https://www.twitter.com"><i class="bi bi-twitter text-dark mx-1"></i></a>
+          <a href="https://www.facebook.com"><i class="bi bi-facebook text-dark mx-1"></i></a>
+          <a href="https://www.instagram.com"><i class="bi bi-instagram text-dark mx-1"></i></a>
+        </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+  <script>
+      mapboxgl.accessToken = 'pk.eyJ1Ijoic2NobGViZW4iLCJhIjoiY2t4ZW8xdmE0MGJiYTJ3bnB0dXI5ajcxYiJ9.UFjjYeNSGz5w4AAL9t9y_Q';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [12.881578056122168, 56.66284869224564],
+      zoom: 14,
+      });
+  </script>
+</body>
+</html>
