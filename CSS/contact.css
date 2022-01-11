@@ -7,7 +7,6 @@
 #map {
     width: 100%;
     border-radius: 10px;
-    margin: 1rem 0;
     aspect-ratio: 3 / 2;
 }
 .content{
@@ -23,7 +22,14 @@
     gap: 1rem;
     justify-content: center;
 }
+.contact-info{
+    display: flex;
+    justify-content: start;
 
+}
+.contact-info p{
+    
+}
 .form-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));

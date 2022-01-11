@@ -1,5 +1,8 @@
 
+.footer i{
+    opacity: 0.7;
+}
 .footer i:hover,
 .footer i:focus-visible{
-    opacity: 0.5;
+    opacity: 1;
 }
