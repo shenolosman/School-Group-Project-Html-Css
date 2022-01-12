@@ -1,3 +1,7 @@
+# Cleanup
+.vs/
+.vscode/
+
 # Logs
 logs
 *.log
