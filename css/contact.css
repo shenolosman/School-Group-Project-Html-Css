@@ -24,6 +24,7 @@
     max-width: 100rem;
     margin-inline: auto;
     padding-inline: 2rem;
+    min-height: 75vh;
 }
 .content-grid{
     display: grid;
@@ -86,12 +87,7 @@
 
 }
 .footer{
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
-}
-@media (max-width: 766px){
-    .footer{
-        position: relative;
-    }
 }
