@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+#map {
+    width: 100%;
+    border-radius: 10px;
+    aspect-ratio: 3 / 2;
+    transition: all 500ms ease-in;
+    animation: map-load 1000ms;
+    filter: drop-shadow(3px 3px 3px grey);
+}
+@keyframes map-load {
+    0%{
+        transform: scale(0.7);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.content{
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+.content-grid{
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit, minmax(20rem, 1fr));
+    margin: 1rem;
+    gap: 1rem;
+    justify-content: center;
+}
+.contact-info{
+    display: flex;
+    justify-content: start;
+
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.form-grid > h3{
+    justify-self: center;
+    grid-column: span 2;
+}
+.form-grid input{
+    width: 95%;
+    filter: drop-shadow(3px 3px 3px grey);
+}
+.form-msg {
+    grid-column: span 2;
+}
+.form-grid textarea{
+    width: 100%;
+    height: 10rem;
+    filter: drop-shadow(3px 3px 3px grey);
+}
+
+.form-btn > *{
+    background-color: rgb(44, 44, 44);
+    border-radius: 10px;
+    color: white;
+    padding: 0.25rem 1rem;
+    margin: 1rem;
+    opacity: 0.85;
+}
+.form-btn button:hover, .form-btn button:focus-visible{
+    opacity: 1;
+}
+@media (max-width: 1000px){
+    .form-grid > *{
+        grid-column: span 2;
+    }
+    #map{
+        aspect-ratio: 1 / 1;
+    }
+
+}
+@media (min-width: 1550px){
+    .form-grid > h3{
+        grid-column: span 2;
+    }
+
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 766px){
+    .footer{
+        position: relative;
+    }
+}
