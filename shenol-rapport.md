@@ -34,7 +34,7 @@ Som mjuka regler vi bör använda semantic HTML som jag beskrivade ovan på och 
 
 ### Wireframes
 
-![alt text](<a href="https://ibb.co/Z1kGjQ8"><img src="https://i.ibb.co/7N6jf3W/index.png" alt="index" border="0"></a> "Index Page Wireframes")
+<a href="https://ibb.co/Z1kGjQ8"><img src="https://i.ibb.co/7N6jf3W/index.png" alt="index" border="0"></a>
 
 
 Jag skissade min index wireframe i paint men det finns några alternativer för att göra wireframe innan jag vet dem. 
