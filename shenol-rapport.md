@@ -36,6 +36,8 @@ Som mjuka regler vi bör använda semantic HTML som jag beskrivade ovan på och 
 
 ![alt text](https://imgur.com/a/UVE9Fym "Index Page Wireframes")
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/UVE9Fym" data-context="false" ><a href="//imgur.com/a/UVE9Fym"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 Jag skissade min index wireframe i paint men det finns några alternativer för att göra wireframe innan jag vet dem. 
 
 Vi byggde websidan med hjälp av BOOTSTRAP 5 och deras komponenter.
@@ -44,7 +46,7 @@ Vi byggde websidan med hjälp av BOOTSTRAP 5 och deras komponenter.
 
 Först av all vi bestämde med hela teamet vad ska vi göra och hur ska se ut web sidan. Vi valde att göra en hund train och vad gör dem. Sedan vi delade arbeta om vem ska göra vad.
 
-Jag valde index.html. Byggde först navigation bar in i **<nav>** tag under **<header>** tagen. Först tittade hur de gjort i Bootstrap dokumantion och sedan modifierade våran menu. Detta menu är responsive och det betyder när webläsaren ska synas i mobilen menun blir collapse och tar mindre plats. 
+Jag valde index.html. Byggde först navigation bar in i *<nav>* tag under *<header>* tagen. Först tittade hur de gjort i Bootstrap dokumantion och sedan modifierade våran menu. Detta menu är responsive och det betyder när webläsaren ska synas i mobilen menun blir collapse och tar mindre plats. 
   
 Jag tänkte mina artiklar kan ha glapp från sidorna så jag skrev **.container** taggen till footer. **.container** är specielt tag att hjälpa hålla margin av vänster och höger sidan. Om jag skulle skriva egen css kod det borde vara **margin:auto** istället. Men med hjälp av bootsrap vi tjänar mycket tid att bygga snabba websidan. 
   
