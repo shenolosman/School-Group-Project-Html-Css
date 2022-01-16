@@ -1,271 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blogsidan</title>
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/blog.css" />
-    <link rel="stylesheet" href="css/allstyle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  </head>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#SmallScreenNavigationBar"
-          aria-controls="SmallScreenNavigationBar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="SmallScreenNavigationBar">
-          <ul class="navbar-nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hund Sida | Blog</title>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <link rel="stylesheet" href="css/allstyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#SmallScreenNavigationBar"
+        aria-controls="SmallScreenNavigationBar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="SmallScreenNavigationBar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/Index.html"><img src="img/dog-face.ico" style="width: 20px" /> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/ourdogs.html">Our dogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/aboutus.html">Who we are</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/organisation.html">Organisation</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <nav class="sidebar col-md-3 col-lg-2 p-0">
+        <div class="sticky-top">
+          <h4 class="sidebar-heading px-3 mb-1 pb-2 mt-5">
+            <span class="border-bottom">Blog posts</span>
+          </h4>
+          <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/HTML_CSS_projektarbete/Index.html"
-                ><img src="img/dog-face.ico" style="width: 20px" /> Home</a
-              >
+              <a class="nav-link" href="#blog1"> Inlägg 1 </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/HTML_CSS_projektarbete/ourdogs.html">Our dogs</a>
+              <a class="nav-link" href="#blog2"> Inlägg 2 </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/HTML_CSS_projektarbete/aboutus.html">Who we are</a>
+            <li class="na-item">
+              <a class="nav-link" href="#blog3"> Inlägg 3</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/HTML_CSS_projektarbete/blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/HTML_CSS_projektarbete/organisation.html">Organisation</a>
+            <li class="na-item">
+              <a class="nav-link" href="#blog4"> Inlägg 4</a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
-  </header>
-  <body>
-    <div class="container">
-      <div class="row">
-        <nav class="sidebar col-md-3 col-lg-2 p-0">
-          <div class="sticky-top">
-            <h4 class="sidebar-heading px-3 mb-1 pb-2 mt-5">
-              <span class="border-bottom">Blog posts</span>
-            </h4>
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link" href="#blog1"> Inlägg 1 </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#blog2"> Inlägg 2 </a>
-              </li>
-              <li class="na-item">
-                <a class="nav-link" href="#blog3"> Inlägg 3</a>
-              </li>
-              <li class="na-item">
-                <a class="nav-link" href="#blog4"> Inlägg 4</a>
-              </li>
-            </ul>
+      </nav>
+
+      <main class="col-md-9 col-lg-10 ml-sm-auto px-md-4 mt-4">
+        <div id="karusellen" class="carousel slide" data-bs-ride="carousel" data-bs-keyboard="true">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/hund1338.jpg" class="d-block w-100 rounded" style="height: 500px" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/hund1337.jpg" class="d-block w-100 rounded" style="height: 500px" alt="..." />
+            </div>
           </div>
-        </nav>
+          <button class="carousel-control-prev" type="button" data-bs-target="#karusellen" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#karusellen" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
-        <main class="col-md-9 col-lg-10 ml-sm-auto px-md-4 mt-4">
-          <div
-            id="karusellen"
-            class="carousel slide"
-            data-bs-ride="carousel"
-            data-bs-keyboard="true"
-          >
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  src="img/hund1338.jpg"
-                  class="d-block w-100 rounded"
-                  style="height: 500px"
-                  alt="..."
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  src="img/hund1337.jpg"
-                  class="d-block w-100 rounded"
-                  style="height: 500px"
-                  alt="..."
-                />
-              </div>
-            </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#karusellen"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#karusellen"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+        <section id="blog1" class="border-bottom mb-4">
+          <h2 class="mt-4 mb-4">Inlägg 1</h2>
+          <div>
+            <p>
+              Hundar i Halmstad Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Alias totam eligendi, perspiciatis aliquam
+              nemo harum accusantium beatae aperiam voluptate non adipisci
+              dolor eos earum ducimus debitis delectus repellat accusamus.
+              Soluta.
+            </p>
           </div>
+          <div class="collapsed">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
+              doloremque ipsa a molestiae totam expedita tempora placeat
+              distinctio ad perferendis, debitis inventore, facilis impedit!
+              Delectus consectetur inventore esse fugit nostrum.
+            </p>
+          </div>
+          <div class="read-more">
+            <p class="text-secondary">Läs mer...</p>
+          </div>
+        </section>
 
-          <section id="blog1" class="border-bottom mb-4">
-            <h2 class="mt-4 mb-4">Inlägg 1</h2>
-            <div>
-              <p>
-                Hundar i Halmstad Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Alias totam eligendi, perspiciatis aliquam
-                nemo harum accusantium beatae aperiam voluptate non adipisci
-                dolor eos earum ducimus debitis delectus repellat accusamus.
-                Soluta.
-              </p>
-            </div>
-            <div class="collapsed">
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio
-                doloremque ipsa a molestiae totam expedita tempora placeat
-                distinctio ad perferendis, debitis inventore, facilis impedit!
-                Delectus consectetur inventore esse fugit nostrum.
-              </p>
-            </div>
-            <div class="read-more">
-              <p class="text-secondary">Läs mer...</p>
-            </div>
-          </section>
+        <section id="blog2" class="border-bottom mb-4">
+          <h2 class="mb-4">Inlägg 2</h2>
+          <div>
+            <p>
+              Hundar i Halmstad Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Alias totam eligendi, perspiciatis aliquam
+              nemo harum accusantium beatae aperiam voluptate non adipisci
+              dolor eos earum ducimus debitis delectus repellat accusamus.
+              Soluta.
+            </p>
+          </div>
+          <div class="collapsed">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Eligendi cumque culpa, perferendis maiores aliquam ex
+              repudiandae ullam dignissimos tenetur modi fuga, voluptatem, et
+              sit maxime debitis placeat soluta quidem mollitia!
+            </p>
+          </div>
+          <div class="read-more">
+            <p class="text-secondary">Läs mer...</p>
+          </div>
+        </section>
 
-          <section id="blog2" class="border-bottom mb-4">
-            <h2 class="mb-4">Inlägg 2</h2>
-            <div>
-              <p>
-                Hundar i Halmstad Lorem, ipsum dolor sit amet consectetur
-                adipisicing elit. Alias totam eligendi, perspiciatis aliquam
-                nemo harum accusantium beatae aperiam voluptate non adipisci
-                dolor eos earum ducimus debitis delectus repellat accusamus.
-                Soluta.
-              </p>
-            </div>
-            <div class="collapsed">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eligendi cumque culpa, perferendis maiores aliquam ex
-                repudiandae ullam dignissimos tenetur modi fuga, voluptatem, et
-                sit maxime debitis placeat soluta quidem mollitia!
-              </p>
-            </div>
-            <div class="read-more">
-              <p class="text-secondary">Läs mer...</p>
-            </div>
-          </section>
+        <section id="blog3" class="border-bottom mb-4">
+          <h2 class="mb-4">Inlägg 3</h2>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Provident expedita eligendi repellat, nisi debitis sint, atque
+              in dolores modi natus quis ullam cupiditate sed. Nesciunt
+              voluptate ipsa mollitia quam impedit?
+            </p>
+          </div>
+          <div class="collapsed">
+            <p>
+              Hundar Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Tempora, commodi magni? A necessitatibus magni modi.
+              Voluptatibus iusto accusantium harum numquam neque explicabo
+              molestias sequi, soluta quos nesciunt reprehenderit, nulla
+              facere.
+            </p>
+          </div>
+          <div class="read-more">
+            <p class="text-secondary">Läs mer...</p>
+          </div>
+        </section>
 
-          <section id="blog3" class="border-bottom mb-4">
-            <h2 class="mb-4">Inlägg 3</h2>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident expedita eligendi repellat, nisi debitis sint, atque
-                in dolores modi natus quis ullam cupiditate sed. Nesciunt
-                voluptate ipsa mollitia quam impedit?
-              </p>
-            </div>
-            <div class="collapsed">
-              <p>
-                Hundar Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Tempora, commodi magni? A necessitatibus magni modi.
-                Voluptatibus iusto accusantium harum numquam neque explicabo
-                molestias sequi, soluta quos nesciunt reprehenderit, nulla
-                facere.
-              </p>
-            </div>
-            <div class="read-more">
-              <p class="text-secondary">Läs mer...</p>
-            </div>
-          </section>
-
-          <section id="blog4" class="border-bottom mb-4">
-            <h2 class="mb-4">Inlägg 4</h2>
-            <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                quibusdam maiores aperiam sapiente ipsa, quis aut ab cumque,
-                ipsum repellendus neque nostrum. Tenetur error odio, fuga
-                perferendis nisi voluptates deserunt.
-              </p>
-            </div>
-            <div class="collapsed">
-              <p>
-                Halmstad Lorem, ipsum dolor sit amet consectetur adipisicing
-                elit. Ex, reprehenderit. Animi deleniti eius, modi culpa nemo
-                aliquid omnis laborum voluptates impedit dignissimos hic
-                corrupti ullam cupiditate ab qui rerum non.
-              </p>
-            </div>
-            <div class="read-more">
-              <p class="text-secondary">Läs mer...</p>
-            </div>
-          </section>
-        </main>
-      </div>
+        <section id="blog4" class="border-bottom mb-4">
+          <h2 class="mb-4">Inlägg 4</h2>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+              quibusdam maiores aperiam sapiente ipsa, quis aut ab cumque,
+              ipsum repellendus neque nostrum. Tenetur error odio, fuga
+              perferendis nisi voluptates deserunt.
+            </p>
+          </div>
+          <div class="collapsed">
+            <p>
+              Halmstad Lorem, ipsum dolor sit amet consectetur adipisicing
+              elit. Ex, reprehenderit. Animi deleniti eius, modi culpa nemo
+              aliquid omnis laborum voluptates impedit dignissimos hic
+              corrupti ullam cupiditate ab qui rerum non.
+            </p>
+          </div>
+          <div class="read-more">
+            <p class="text-secondary">Läs mer...</p>
+          </div>
+        </section>
+      </main>
     </div>
+  </div>
 
-    <footer class="footer p-5 bg-light mt-3">
-      <div class="container">
-        <div class="row g-3">
-          <div class="col-md-4 text-center">
-            <ul class="nav">
-              <li class="nav-item"> 
+  <footer class="footer p-5 bg-light mt-3">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-6 text-center">
+          <ul class="nav">
+            <li class="nav-item">
               <a href="/Index.html" class="nav-link text-dark">Home</a>
-              </li>
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a href="/ourdogs.html" class="nav-link text-dark">Our dogs</a>
-              </li>
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a href="/aboutus.html" class="nav-link text-dark">About us</a>
-              </li>
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a href="/blog.html" class="nav-link text-dark">Blog</a>
-              </li>
-              <li class="nav-item">
+            </li>
+            <li class="nav-item">
               <a href="/organisation.html" class="nav-link text-dark">Organisation</a>
-            </ul>
-          </div>
-            <div class="col-md-4 text-center text-md-start">
-              <p class="lead">Copyright &copy; 2021 Projektarbete HTML CSS</p>
-            </div>
-            <div class="col-md-4 text-center text-md-end h4">
-              <a href="https://www.twitter.com"><i class="bi bi-twitter text-dark mx-1"></i></a>
-              <a href="https://www.facebook.com"><i class="bi bi-facebook text-dark mx-1"></i></a>
-              <a href="https://www.instagram.com"><i class="bi bi-instagram text-dark mx-1"></i></a>
-            </div>
+          </ul>
+        </div>
+        <div class="col-md-4 text-center text-md-start">
+          <p class="lead">Copyright &copy; 2021 Projektarbete HTML CSS</p>
+        </div>
+        <div class="col-md-2 text-center text-md-end h4">
+          <a href="https://www.twitter.com"><i class="bi bi-twitter text-dark mx-1"></i></a>
+          <a href="https://www.facebook.com"><i class="bi bi-facebook text-dark mx-1"></i></a>
+          <a href="https://www.instagram.com"><i class="bi bi-instagram text-dark mx-1"></i></a>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <script src="/js/blog.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
 
-    <script src="/js/blog.js"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
