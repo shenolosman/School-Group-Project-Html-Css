@@ -13,7 +13,7 @@ webbläsaren skickar en HTTP GET request på url:n http://127.0.0.1:5501/aboutus
 ![response bild](response.png)  
 webbservern svarar (respose) med stauskod 200 OK om allt är ok
 och skickar html sidan.  
-Om det finns länkar i tex `<head>` delan av htmlkoden som tex css stylesheets eller bilder någonstans i htmlkoden skickar webbläsaren en ny request för att hämta dessa.
+Om det finns länkar i tex `<head>` delan av htmlkoden som tex css stylesheets eller bilder någonstans i htmlkoden skickar webbläsaren en ny request för att hämta dessa.  
 ![head bild](head.png)  
 
 ![requests bild](http-requests.png)  
