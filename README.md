@@ -4,6 +4,8 @@ Website with bootstrap with group.
 
 We choose a family company to raise and train dwarfschnauzer. It has five static pages build with html css js and mostly bootstrap.
 
+### For *Demo* click the [link](https://shenolosman.github.io/bootstrap-organisation-page/)
+
 Home page:
 
 ![Home page](https://gcdnb.pbrd.co/images/83uxag4m75I4.png?o=1 "Home page")
